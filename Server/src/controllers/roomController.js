@@ -11,12 +11,11 @@ function generateRoomCode(length = 8){
 }
 
 //Create Room
-exports.createRoom = async (req, res) => {
+exports.createRoom = async (res) => {
     try{
         const db = getDB();
         const rooms = db.collection("rooms");
         const roomCode = generateRoomCode();
-
         const newRoom = {
             roomCode,
             map: null,
@@ -26,14 +25,11 @@ exports.createRoom = async (req, res) => {
         await rooms.insertOne(newRoom);
 
         res.status(201).json(newRoom);
-
-        console.log(newRoom);
+        
     }catch (err) {
     res.status(500).json({ error: err.message });
   }
 }
-
-
 
 //Get a room by roomCode
 exports.getRoom = async (req, res) => {

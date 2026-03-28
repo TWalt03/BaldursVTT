@@ -1,0 +1,13 @@
+.joinRoom{
+    display: flex; 
+    position: relative;
+    align-items: center;
+}
+.button1{
+    position: absolute;
+    
+}
+
+button{
+    color: gray;
+}
