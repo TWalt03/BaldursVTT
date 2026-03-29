@@ -10,7 +10,7 @@ async function connectDB() {
     await client.connect();
     console.log('✅ MongoDB connected');
 
-    db = client.db('BaldursVTT'); // change to your DB name
+    db = client.db('BaldursVTT');
   } catch (error) {
     console.error('❌ MongoDB connection failed:', error);
     process.exit(1);
