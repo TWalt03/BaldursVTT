@@ -2,6 +2,7 @@ import React from "react";
 import "./App.css";
 import Join from './Components/Join'
 import './Components/Join.css'
+import './index.css'
 
 function App() {
   return (

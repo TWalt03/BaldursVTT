@@ -21,11 +21,9 @@ exports.createRoom = async (res) => {
             map: null,
             tokenarray: [],
         }
-
         await rooms.insertOne(newRoom);
 
         res.status(201).json(newRoom);
-        
     }catch (err) {
     res.status(500).json({ error: err.message });
   }
