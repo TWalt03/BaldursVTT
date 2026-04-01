@@ -18,7 +18,7 @@ function Room(){
     
     useEffect(() => {
         socketRef.current = io(import.meta.env.VITE_SERVER_URL, {
-            transports: ['websocket']
+            transports: ['websocket', 'polling']
         });
         socketRef.current.emit('join-room', (roomCode))
         socketRef.current.on('user-joined', (data) =>{
