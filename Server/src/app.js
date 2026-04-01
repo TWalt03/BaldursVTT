@@ -11,8 +11,8 @@ const cors = require('cors');
 const app = express();
 const httpServer = http.createServer(app);
 const io = new Server(httpServer, {
-  pingTimeout: 3500,
-  pingInterval: 3500,
+  pingTimeout: 2500,
+  pingInterval: 2500,
   cors: {
     origin: process.env.CLIENT_URL || "http://localhost:5173",
     methods: ['GET', 'POST']
