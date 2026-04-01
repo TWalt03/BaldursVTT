@@ -35,7 +35,7 @@ export default function Join() {
           <button type="submit" className="button1">
             Join Room
           </button>
-          <input name="roomCode" />
+          <input name="roomCode"/>
       </div>
     </form>
   );

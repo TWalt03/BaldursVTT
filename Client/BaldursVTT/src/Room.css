@@ -19,7 +19,7 @@
 }
 .userList{
     display: flex;
-    flex-direction:column ;
+    flex-direction:column;
     align-items: center;
     width: 13rem;
     height: fit-content;
@@ -43,4 +43,9 @@
     margin-top: 0;
     color: black;
     align-items: center;
+}
+
+.upload{
+    display: flex;
+    justify-content: center;
 }
