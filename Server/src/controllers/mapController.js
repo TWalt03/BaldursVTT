@@ -6,7 +6,7 @@ exports.upload = upload;
 
 exports.mapController = async(req, res) => {
     const roomCode = req.params.roomCode;
-    const fileName = `${roomCode}_${Date.now()}_${req.file.originalname}`;
+    const fileName = `${roomCode}_${Date.now()}_${req.file.originalname.replace(/[^a-zA-Z0-9._-]/g, '_')}`;
     const db = getDB();
     const io = req.app.get('io');
     
