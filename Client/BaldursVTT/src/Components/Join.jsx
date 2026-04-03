@@ -31,11 +31,11 @@ export default function Join() {
   }
   return (
     <form onSubmit={handleSubmit}>
-      <div className="joinRoom">
-          <button type="submit" className="button1">
-            Join Room
+      <div className="join">
+          <input className="join-input" placeholder="Enter Room Code"/>
+          <button className="join-button" type="submit" >
+            Join
           </button>
-          <input name="roomCode"/>
       </div>
     </form>
   );

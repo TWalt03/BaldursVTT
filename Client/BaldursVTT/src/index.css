@@ -1,9 +1,35 @@
 :root{
+    --bg:           #0b0a09;
+    --bg-card:      #292521;
+    --border:       #332b21;
+    --border-warm:  #664c21;
+    --text-heading: #e8ddd0;
+    --text-body:    #d6cfc7;
+    --text-subtle:  #ad9e8c;
+    --gold:         #FFD700;
+    --gold-dim:     #DAA520;
+}
+
+.root{
+    min-height: 100dvh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+body{
+    background-color: var(--bg);
     margin: 0;
     padding: 0;
 }
 
-body{
-    margin:0;
-    padding:0;
+h1{
+    margin: 0;
+    padding: 0;
+}
+
+p{
+    margin: 0;
+    padding: 0;
 }
