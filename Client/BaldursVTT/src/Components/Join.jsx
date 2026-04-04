@@ -25,15 +25,13 @@ export default function Join() {
       navigate(`/room/${code}`);
     } catch (error) {
       console.error(error.message);
-    }
-
-    
+    } 
   }
   return (
     <form onSubmit={handleSubmit}>
       <div className="join">
-          <input className="join-input" placeholder="Enter Room Code"/>
-          <button className="join-button" type="submit" >
+          <input className="join-input" name="roomCode" placeholder="Enter Room Code"/>
+          <button type="submit" className="join-button" >
             Join
           </button>
       </div>
