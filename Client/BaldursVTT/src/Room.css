@@ -1,14 +1,71 @@
+.background-room{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+    background: var(--bg);
+}
 
-.overlay{
+.menu-bar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    left: 1rem;
+    top: 50vh;
+    z-index: 999;
+    background-color: var(--bg);
+}
+.menu-bar-icon{
+    padding: .5rem;
+    color: var(--gold-dim);
+    border: 1px solid var(--border-warm);
+
+}
+.room-title{
     display: flex;
     flex-direction: row;
-    position: relative;
-    z-index: 0;
+    align-items: center;
+    font-size: .75rem;
+    padding: 0 1rem;
+    gap: .5rem;
 }
+.room-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.room-code-display{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: .25rem;
+}
+.subtitle-room{
+    font-family: 'PT Serif', serif;
+    font-style: italic;
+    font-size: clamp(.5rem, 2.5vw, 2rem);
+    color: var(--text-subtle);
+    border: 1px solid var(--text-subtle);
+    padding: .25rem .5rem 0 .5rem;
+  }
+.active-users{
+    margin: 0 2rem;
+    color: var(--gold-dim);
+}
+
+
 .canvas{
     padding: 0;
     margin: 0;
+    flex: 1;
+    background: linear-gradient(to right, var(--border) 1px, transparent 1px), linear-gradient(to bottom, var(--border) 1px, transparent 1px), radial-gradient(ellipse at center, #1a2535 0%, #0f1520 60%, var(--bg) 100%);
+    background-size: 60px 60px,60px 60px,  100vw 100vh;
+   
 }
+
 .userList{
     display: flex;
     flex-direction:column;

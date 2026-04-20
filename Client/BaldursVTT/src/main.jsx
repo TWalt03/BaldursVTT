@@ -3,11 +3,10 @@ import App from './App.jsx'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Room from './Room.jsx'
 createRoot(document.getElementById('root')).render(
-  
     <Router>
       <Routes>
         <Route path="/" element={<App/>} />
-        <Route path="/room/:roomCode" element={<Room/>} />
+        <Route path="/room/:roomCode" element={<Room/>} unicode="U+13020" />
       </Routes>
     </Router>
     

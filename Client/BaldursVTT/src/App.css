@@ -68,7 +68,6 @@
   align-items: stretch;
   gap: .5rem;
 }
-
 .card{
   display: flex;
   flex-direction: column;
@@ -93,7 +92,6 @@
   font-family: 'PT Serif', serif;
   color: var(--text-body); 
 }
-
 
 .button-create{
   font-family: 'PT Serif', serif;
